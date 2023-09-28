@@ -1,6 +1,6 @@
 /*!-----------------------------------------------------------
  * Copyright (c) Microsoft Corporation. All rights reserved.
- * Version: 0.0.0(86921c2fb801b4a0679dbab1b8ec6e1ae3e38421)
+ * Version: 0.0.0(5a965f2584d753a572c72031cb1af15aa66af1c8)
  * Released under the MIT license
  * https://github.com/microsoft/vscode/blob/main/LICENSE.txt
  *-----------------------------------------------------------*/
@@ -4185,16 +4185,17 @@ define(__m[31/*vs/base/common/keyCodes*/], __M([0/*require*/,1/*exports*/]), fun
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
- * [요약]
- * 지연 평가 래퍼
- * [개요]
- * export class Lazy<T>
  *--------------------------------------------------------------------------------------------*/
 define(__m[32/*vs/base/common/lazy*/], __M([0/*require*/,1/*exports*/]), function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.Lazy = void 0;
+    /*
+     * [요약]
+     * 지연 평가 래퍼
+     * [개요]
+     * export class Lazy<T>
+     */
     class Lazy {
         constructor(executor) {
             this.executor = executor;
@@ -4735,9 +4736,6 @@ define(__m[19/*vs/base/common/linkedList*/], __M([0/*require*/,1/*exports*/]), f
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
- * [개요]
- * export class `StopWatch`
  *--------------------------------------------------------------------------------------------*/
 define(__m[20/*vs/base/common/stopwatch*/], __M([0/*require*/,1/*exports*/]), function (require, exports) {
     "use strict";
@@ -4745,6 +4743,7 @@ define(__m[20/*vs/base/common/stopwatch*/], __M([0/*require*/,1/*exports*/]), fu
     exports.StopWatch = void 0;
     const hasPerformanceNow = (globalThis.performance && typeof globalThis.performance.now === 'function');
     class StopWatch {
+        /** 스탑워치 만들고, 스탑워치 시작  */
         static create(highResolution) {
             return new StopWatch(highResolution);
         }
@@ -6041,18 +6040,6 @@ define(__m[33/*vs/base/common/cancellation*/], __M([0/*require*/,1/*exports*/,7/
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
- * [개요] export
- * export function isFalsyOrWhitespace
- * export function format
- * export function format2
- * export function escape
- * export function escapeRegExpCharacters
- * export function count
- * ...
- *
- *
- *
  *--------------------------------------------------------------------------------------------*/
 define(__m[5/*vs/base/common/strings*/], __M([0/*require*/,1/*exports*/,27/*vs/base/common/cache*/,32/*vs/base/common/lazy*/]), function (require, exports, cache_1, lazy_1) {
     "use strict";
@@ -9095,6 +9082,7 @@ define(__m[24/*vs/editor/common/core/characterClassifier*/], __M([0/*require*/,1
     exports.CharacterSet = CharacterSet;
 });
 
+/* eslint-disable header/header */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -9284,6 +9272,7 @@ define(__m[6/*vs/editor/common/core/offsetRange*/], __M([0/*require*/,1/*exports
     exports.OffsetRangeSet = OffsetRangeSet;
 });
 
+/* eslint-disable header/header */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -9436,10 +9425,6 @@ define(__m[4/*vs/editor/common/core/position*/], __M([0/*require*/,1/*exports*/]
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
- * [개요]
- * export interface IRange
- * export class Range
  *--------------------------------------------------------------------------------------------*/
 define(__m[2/*vs/editor/common/core/range*/], __M([0/*require*/,1/*exports*/,4/*vs/editor/common/core/position*/]), function (require, exports, position_1) {
     "use strict";
@@ -9897,6 +9882,7 @@ define(__m[2/*vs/editor/common/core/range*/], __M([0/*require*/,1/*exports*/,4/*
     exports.Range = Range;
 });
 
+/* eslint-disable header/header */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -10127,6 +10113,7 @@ define(__m[12/*vs/editor/common/core/lineRange*/], __M([0/*require*/,1/*exports*
     exports.LineRange = LineRange;
 });
 
+/* eslint-disable header/header */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -13051,7 +13038,8 @@ define(__m[47/*vs/editor/common/languages/supports/inplaceReplaceSupport*/], __M
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
+ *--------------------------------------------------------------------------------------------*/
+/*
  * [개요] export interface & class
  * export interface IDecorationOptions
  * export interface IModelDecorationGlyphMarginOptions
@@ -13089,7 +13077,7 @@ define(__m[47/*vs/editor/common/languages/supports/inplaceReplaceSupport*/], __M
 [*]export interface `ITextBuffer` extends IReadonlyTextBuffer
  * export class ApplyEditsResult
  * export interface IInternalModelContentChange extends IModelContentChange
- *--------------------------------------------------------------------------------------------*/
+ */
 define(__m[48/*vs/editor/common/model*/], __M([0/*require*/,1/*exports*/,11/*vs/base/common/objects*/]), function (require, exports, objects_1) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
@@ -13185,7 +13173,7 @@ define(__m[48/*vs/editor/common/model*/], __M([0/*require*/,1/*exports*/,11/*vs/
     }
     exports.TextModelResolvedOptions = TextModelResolvedOptions;
     /**
-     * 프로퍼티들 \
+     * 프로퍼티s \
      * -`_findMatchBrand`: void = undefined \
      * -public readonly `range`: Range \
      * -public readonly `matches`: string[] | null
@@ -13606,6 +13594,7 @@ define(__m[50/*vs/editor/common/model/mirrorTextModel*/], __M([0/*require*/,1/*e
     exports.MirrorTextModel = MirrorTextModel;
 });
 
+/* eslint-disable header/header */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
@@ -15297,6 +15286,7 @@ define(__m[54/*vs/editor/common/tokenizationRegistry*/], __M([0/*require*/,1/*ex
             return false;
         }
         setColorMap(colorMap) {
+            // console.log('컬러맵 사이즈: ' + this._colorMap?.length); // 테스트용
             this._colorMap = colorMap;
             this._onDidChange.fire({
                 changedLanguages: Array.from(this._tokenizationSupports.keys()),
@@ -15304,6 +15294,7 @@ define(__m[54/*vs/editor/common/tokenizationRegistry*/], __M([0/*require*/,1/*ex
             });
         }
         getColorMap() {
+            // console.log('컬러맵 사이즈: ' + this._colorMap?.length); // 테스트용
             return this._colorMap;
         }
         getDefaultBackground() {
@@ -18046,7 +18037,6 @@ define(__m[60/*vs/editor/common/languages*/], __M([0/*require*/,1/*exports*/,35/
          * The tokens in binary format. Each token occupies two array indices. For token i:
          *  - at offset 2*i => startIndex
          *  - at offset 2*i + 1 => metadata
-         *
          */
         tokens, endState) {
             this.tokens = tokens;
@@ -18429,15 +18419,6 @@ define(__m[61/*vs/editor/common/services/editorBaseApi*/], __M([0/*require*/,1/*
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
- *
- * [개요] export
- * export interface `IMirrorModel` extends IMirrorTextModel
- * export interface `IWorkerContext`
- * export interface `IRawModelData`
- * export interface `ICommonModel` extends ILinkComputerTarget, IDocumentColorComputerTarget, IMirrorModel
- * export interface `IForeignModuleFactory`
-[*]export class `EditorSimpleWorker` implements IRequestHandler, IDisposable
- * export function `create`
  *--------------------------------------------------------------------------------------------*/
 
 
