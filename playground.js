@@ -1,4 +1,4 @@
-require.config({ paths: { vs: '../vscode/out-editor-min/vs' } });
+require.config({ paths: { vs: './out-editor-min/vs' } });
 require(['vs/editor/editor.main'], start);
 
 
