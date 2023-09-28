@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>browser-amd-editor</title>
+		<title>🍌🥥</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link href="playground.css" rel="stylesheet">
 	</head>
 	<body>
-		<h2>BANACO Sample</h2>
-		<div id="container" style="width: 800px; height: 600px; border: 1px solid grey"></div>
+		<h2>
+			BANACO🍌🥥 <!-- <span style="vertical-align: super;">🍌</span> -->
+		</h2>
+		<div id="container" style="width: 582px; height: 640px; border: 1px solid grey"><sup></sup></div>
 
 		<!-- OR ANY OTHER AMD LOADER HERE INSTEAD OF loader.js -->
-		<script src="./out-editor/vs/loader.js"></script>
-		<script>
-			require.config({ paths: { vs: './out-editor/vs' } });
+		<script src="../vscode/out-editor-min/vs/loader.js"></script>
 
-			require(['vs/editor/editor.main'], function () {
-				var editor = monaco.editor.create(document.getElementById('container'), {
-					value: "안녕~\n\n날 따라 해봐요~ 바나나~ 코코넛~~\n\n",
-					language: 'text/plain'
-				});
-			});
-		</script>
+		<!-- <script src="monacoDoc_mylang.js"></script> -->
+
+
+
+
+		<script src="playground.js"></script>
+
+
 	</body>
 </html>
