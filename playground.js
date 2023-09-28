@@ -202,18 +202,7 @@ function start() {
 
 
 
-   const value = `class MyClass {
-@attribute
-void main() {
-   Console.log( "Hello Monarch world");
-   int abc = 7;
-      if (abc == 7) {
-         Console.log( "Hello Monarch world\\n");
-      }
-   }
-}
-
-청구항 2
+   const value = `청구항 2
 제1항에 있어서,
 X1은 C(R21)(R22) 또는 Si(R21)(R22)인, 유기 발광 소자.
 
@@ -224,15 +213,6 @@ X1은 C(R21)(R22) 또는 Si(R21)(R22)인, 유기 발광 소자.
 C1-C10알킬기, C1-C10알콕시기, 페닐기, 비페닐기, 터페닐기 및 나프틸기 중에서 선택된 적어도 하나로 치환된,
 C1-C5알킬렌기 또는 C2-C5알케닐렌기;
 를 통하여 서로 결합된, 유기 발광 소자.
-
-[Mar 7 16:02 2004] [info] Server built: Feb 27 2004
-[Mar 7 16:02 2004] [notice] Apache/1.3.29 (Unix) configured -- resuming normal operations
-httpd[31628]: [error] File does not exist
-
-Ecma International의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다. 특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다. HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다.[1] 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력원인 엔진이라고 볼 수 있다.
-
-썬 마이크로시스템즈(현 오라클)에서 개발한 Java와 이름이 비슷하지만 별 관계가 없는 언어이다. 사람들이 흔히 헷갈리는 부분 중 하나라 Java의 소유자인 오라클에서도 아니라고 강조한다.[2] 구동 방식도 Java Virtual Machine을 이용해서 돌리는 Java와, 브라우저 내에 스크립트 엔진(인터프리터)이 존재하는 JavaScript는 완전히 다르다. 햄과 햄스터가 다르고, 파와 파슬리가 다르며, 인도와 인도네시아가 다르듯 심지어 웹 서버용 파생 규격도 다르다.
-
 \n\n`
 
    var editor = monaco.editor.create(document.getElementById('container'), {
